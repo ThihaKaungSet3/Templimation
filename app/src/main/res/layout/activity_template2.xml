@@ -7,20 +7,39 @@
     android:layout_height="match_parent"
     tools:context=".templates.Template2">
 
-    <View
-        android:id="@+id/player"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@color/primary_yellow"
-        />
 
-    <View
-        android:id="@+id/target"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="right"
-        android:background="@color/yellow_accent"
-        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/player"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@color/primary_yellow"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <View
+            android:id="@+id/target"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@color/yellow_accent"
+            />
+
+    </LinearLayout>
+
+
+
+
 
 
 </FrameLayout>

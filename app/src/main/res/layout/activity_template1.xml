@@ -7,22 +7,25 @@
     android:layout_height="match_parent"
     tools:context=".templates.Template1">
 
-    <non.shahad.templatesforrle.common.viewgroup.MatchQAndALayout
-        android:id="@+id/randomWordsContainer"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf="@+id/answerContainer"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <non.shahad.templatesforrle.common.viewgroup.MatchQAndALayout
         android:id="@+id/answerContainer"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/randomWordsContainer"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/randomWordsContainer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/randomWordsContainer"
-        app:layout_constraintTop_toTopOf="@+id/randomWordsContainer" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <non.shahad.templatesforrle.common.viewgroup.MatchQAndALayout
+        android:id="@+id/randomWordsContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
