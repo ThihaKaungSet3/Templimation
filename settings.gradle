@@ -1,2 +1,4 @@
+include ':common-ui'
+include ':buttons'
 include ':app'
 rootProject.name = "Templates For RLE"

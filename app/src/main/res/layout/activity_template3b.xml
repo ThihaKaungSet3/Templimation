@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".templates.template3.Template3b">
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/CommonTitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Choose the correct answer"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/running"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ContinueBackground"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            style="@style/ContinueButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Continue" />
+
+    </LinearLayout>
+
+    <non.shahad.buttons.ChoiceButton
+        android:id="@+id/choiceButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/product_sans_bold"
+        android:padding="16dp"
+        app:selectedColor="@color/primary_yellow"
+        app:selectedTextColor="@color/black"
+        app:unSelectedColor="@color/yellow_accent"
+        app:unSelectedTextColor="@color/primary_yellow"
+        app:isSelected="true"
+        android:text="Running"
+        app:layout_constraintEnd_toStartOf="@+id/choiceButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <non.shahad.buttons.ChoiceButton
+        android:id="@+id/choiceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/product_sans_bold"
+        android:padding="16dp"
+        app:selectedColor="@color/primary_yellow"
+        app:selectedTextColor="@color/black"
+        app:unSelectedColor="@color/yellow_accent"
+        app:unSelectedTextColor="@color/primary_yellow"
+        android:text="Sleeping"
+        app:layout_constraintBottom_toBottomOf="@+id/choiceButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/choiceButton2"
+        app:layout_constraintTop_toTopOf="@+id/choiceButton2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

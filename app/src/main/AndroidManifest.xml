@@ -3,14 +3,18 @@
     package="non.shahad.templatesforrle">
 
     <application
+        android:name=".TemplateApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name=".TemplateApplication"
         android:theme="@style/Theme.AppCompat.Light">
-        <activity android:name=".templates.Template12"></activity>
+        <activity android:name=".templates.template3.Template3a"></activity>
+        <activity android:name=".templates.template3.Template3d" />
+        <activity android:name=".templates.template3.Template3c" />
+        <activity android:name=".templates.template3.Template3b" />
+        <activity android:name=".templates.Template12" />
         <activity android:name=".templates.Template11" />
         <activity android:name=".templates.Template10" />
         <activity android:name=".templates.Template9" />

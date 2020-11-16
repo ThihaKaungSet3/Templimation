@@ -2,18 +2,13 @@ package non.shahad.templatesforrle.templates
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.TranslateAnimation
-import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import com.google.android.flexbox.FlexboxLayout
 import non.shahad.templatesforrle.R
-import non.shahad.templatesforrle.common.exts.pxToDp
 import non.shahad.templatesforrle.common.textview.AnswerTextView
-import non.shahad.templatesforrle.databinding.ActivityTemplate1Binding
 import non.shahad.templatesforrle.databinding.ActivityTemplate5Binding
 import non.shahad.templatesforrle.models.Answer
 import non.shahad.templatesforrle.models.RemoveAnswerListener

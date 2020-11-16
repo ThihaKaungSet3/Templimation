@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularPlayButton">
+        <attr name="circleColor" format="color" />
+<!--        <attr name="cb_pressedRingWidth" format="dimension" />-->
+    </declare-styleable>
+
+    <declare-styleable name="ChoiceButton">
+        <attr name="selectedColor" format="color" />
+        <attr name="unSelectedColor" format="color"/>
+        <attr name="selectedTextColor" format="color" />
+        <attr name="unSelectedTextColor" format="color" />
+        <attr name="isSelected" format="boolean"/>
+        <attr name="cornerRadius" format="dimension"/>
+        <!--        <attr name="cb_pressedRingWidth" format="dimension" />-->
+    </declare-styleable>
+</resources>

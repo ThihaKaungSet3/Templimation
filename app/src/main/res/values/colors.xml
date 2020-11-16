@@ -10,4 +10,6 @@
     
     <color name="yellow_accent">#33F9D324</color>
     <color name="primary_yellow">#F9D324</color>
+
+    <color name="divider_color">#4D808080</color>
 </resources>
