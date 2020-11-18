@@ -19,9 +19,6 @@ class CircularPlayButton @JvmOverloads constructor(
 
     private var isPlaying = false
 
-    private var centerX = 0f
-    private var centerY = 0f
-
     private var circlePaint: Paint? = null
     private var bgColor = Color.YELLOW
 
@@ -33,14 +30,15 @@ class CircularPlayButton @JvmOverloads constructor(
         val a = context.obtainStyledAttributes(attrs!!,R.styleable.CircularPlayButton)
         bgColor = a.getColor(R.styleable.CircularPlayButton_circleColor,Color.YELLOW)
         backgroundTintList = ColorStateList.valueOf(bgColor)
-        actions()
 
         a.recycle()
     }
 
-    private fun actions(){
+
+    fun setOnPlayPauseListener(onPlayPauseListener: OnPlayPauseListener){
         setOnClickListener {
             isPlaying = !isPlaying
+            onPlayPauseListener.onPlayPause(isPlaying)
             invalidate()
         }
     }
@@ -53,9 +51,9 @@ class CircularPlayButton @JvmOverloads constructor(
 
     private fun considerImage(){
         if (isPlaying){
-            setImageDrawable(ContextCompat.getDrawable(context,R.drawable.ic_baseline_play_arrow_24))
-        }else {
             setImageDrawable(ContextCompat.getDrawable(context,R.drawable.ic_baseline_pause_24))
+        }else {
+            setImageDrawable(ContextCompat.getDrawable(context,R.drawable.ic_baseline_play_arrow_24))
         }
     }
 

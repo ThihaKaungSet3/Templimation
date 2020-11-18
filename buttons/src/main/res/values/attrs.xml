@@ -14,4 +14,13 @@
         <attr name="cornerRadius" format="dimension"/>
         <!--        <attr name="cb_pressedRingWidth" format="dimension" />-->
     </declare-styleable>
+
+    <declare-styleable name="RecorderButton">
+        <attr name="rippleColor" format="color" />
+        <attr name="startRadius" format="dimension"/>
+        <attr name="endRadius" format="dimension"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="rippleDuration" format="integer"/>
+        <!--        <attr name="cb_pressedRingWidth" format="dimension" />-->
+    </declare-styleable>
 </resources>
